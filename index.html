@@ -1,0 +1,271 @@
+<html>
+	<head>
+		<title>ClearBlade Tutorial</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script src="js/lib/ClearBladeV2.js"></script>
+		<script src="js/lib/mqttws31.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/uiframework.js"></script>
+		<script src="js/part1.js"></script>
+		<script src="js/part2.js"></script>
+		<script src="js/part3.js"></script>
+		<script src="js/part4.js"></script>
+		<script src="js/part5.js"></script>
+		<script src="js/part6.js"></script>
+		<script src="js/part7.js"></script>
+		<script src="js/part8.js"></script>
+		<script src="js/part9.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			<div id="titleLeft" onClick="titleLeftClick()"></div>
+			<div id="titleCenter" onClick="titleCenterClick()">ClearBlade Tutorial</div>
+			<div id="titleRight" onClick="titleRightClick()"></div>
+		</div>
+
+		<div class="content">
+			<div class="label">
+				<div id="groupTopic"></div>
+			</div>
+
+			<div id="part1" class="hiddenView">
+				<div class="label">Part 1 - Initialize </div>
+				<div>Welcome to the ClearBlade Tutorial</div>
+				<ul>
+					<li>This tutorial will help you get familiar with the ClearBlade Platform</li>
+					<li>By the end of this tutorial you will know how to create a System, User, Collection, Service and Library</li>
+					<li>You will also be introduced to ClearBlade messaginge over MQTT, messaginge from a service, creating a trigger, scheduling a timer and view analytics</li>
+					<li>Enjoy and ask a lot of questions!</li>
+				</ul>
+				<div>
+					Begin by completing part 1 of the tutorial. When you are done, click the button below to check that initalization was successful
+				</div>
+				
+				<button id="part1Button" onClick="part1Event()">Connect to the platform</button>
+				<div class="error" id="part1Error"></div>
+	
+			</div>
+			<div id="part1b" class="hiddenView">
+				<div class="label">Part 1 - Success</div>
+				<div>Way to go!  You have initialized anonymously</div>
+				<div>You can allow Anonymous users to</div>
+				<ul>
+					<li>Read and modify data</li>
+					<li>Execute code services</li>
+					<li>Register users</li>
+					<li>Message over MQTT2</li>
+				</ul>
+				<div>
+					Click Next to start Part 2
+				</div>
+				
+				<button id="part1bButton" onClick="part1bEvent()">Next</button>
+				<div class="error" id="part1bError"></div>
+	
+			</div>
+			<div id="part2" class="hiddenView">
+				<div class="label">Part 2 - Authenticate</div>
+				<div>Complete part 2 of the Tutorial.</div>
+				<div>Test your work by entering a user and password, then clicking the login button</div>
+				<input class="fullInput" id="email"  placeholder="email" type="text" value="test@clearblade.com"/>
+				<input class="fullInput" id="password" placeholder="password" type="password" value="clearblade"/>
+				<button id="part2Button" onClick="part2Event()">Login</button>
+				<div class="error" id="part2Error"></div>
+			</div>
+			<div id="part2b" class="hiddenView">
+				<div class="label">Part 2 - Success</div>
+				<div>Congratulations!  You have logged in</div>
+				<div>The users in system</div>
+				<ul>
+					<li>are assigned roles with granular permission</li>
+					<li>have custom attributes</li>
+					<li>are tracked with analytics</li>
+					<li>... of course your system is secure by default</li>
+				</ul>
+				<div>
+					Click Next to start Part 3
+				</div>
+				
+				<button id="part1bButton" onClick="part1bEvent()">Next</button>
+				<div class="error" id="part1bError"></div>
+	
+			</div>
+			<div id="part3" class="hiddenView">
+				<div class="label">Part 3 - Collections</div>
+				<div>Start working with Data - With ClearBlade you can</div>
+				<ul>
+					<li>Create new data structures</li>
+					<li>Perform rich queries</li>
+					<li>Create connections to 3rd party databases like Microsoft SQLServer</li>
+					<li>Permission and protect the data confidentiality</li>
+				</ul>
+				<div>
+					Complete Part 3 of the tutorial. When you are done, click the button below to check and make sure everything is working
+				</div>
+				
+				<button id="part3Button" onClick="part3Event()">Fetch your Data</button>
+				<div id="part3Error"></div>
+	
+			</div>
+
+			<div id="part3b" class="hiddenView">
+				<div class="label">Part 3 - Success</div>
+				<div>Congratulations!  You've got data</div>
+				<div>Here's whats currently in your weather collection</div>
+				<ul id="weatherList">
+					
+				</ul>
+				<div>
+					Click Next to start Part 4
+				</div>
+				
+				<button id="part3bButton" onClick="part3bEvent()">Next</button>
+				<div class="error" id="part3bError"></div>
+	
+			</div>
+
+			<div id="part4" class="hiddenView">
+				<div class="label">Part 4 - Create a service</div>
+				<div>Implement your Web API by creating a new service that </div>
+				<ul>
+					<li>Are written in standard Javascript</li>
+					<li>Take custom parameters and respond with standard JSON objects</li>
+					<li>and of course be permissioned to ensure your system stays secure</li>
+				</ul>
+				<div>
+					Get to work on Part 4 of the tutorial and click the button below to see it all work
+				</div>
+				<input class="fullInput" id="city4"  placeholder="city" type="text" value="Austin"/>
+				<input class="fullInput" id="state4"  placeholder="state" type="text" value="Tx"/>
+				<input class="fullInput" id="country4"  placeholder="country" type="text" value="USA"/>
+				<button id="part4Button" onClick="part4Event()">Call your service</button>
+				<div class="error" id="part4Error"></div>
+	
+			</div>
+			<div id="part4b" class="hiddenView">
+				<div class="label">Part 4 - Success</div>
+				<div>Good work - here is the response from your first service</div>
+				<br>
+				<div id="part4Response"></div>
+				<br>
+				<br>
+				<div>
+					Click Next to start Part 5
+				</div>
+				
+				<button id="part4bButton" onClick="part4bEvent()">Next</button>
+				<div class="error" id="part4bError"></div>
+	
+			</div>
+			<div id="part5" class="hiddenView">
+				<div class="label">Part 5 - Getting busy with logic</div>
+				<div>Update your service to implement business logic that </div>
+				<ul>
+					<li>Fetches and writes data from a collection</li>
+					<li>Gathers user info</li>
+					<li>Authors comparison logic to ensure unique information is saved </li>
+				</ul>
+				<input class="fullInput" id="city5"  placeholder="city" type="text" value="Austin"/>
+				<input class="fullInput" id="state5"  placeholder="state" type="text" value="Tx"/>
+				<input class="fullInput" id="country5"  placeholder="country" type="text" value="USA"/>
+				<div>
+					Complete the steps in Tutorial Part 5 and then click below to check your work
+				</div>
+				
+				<button id="part5Button" onClick="part5Event()">Check your logic</button>
+				<div id="part5Error"></div>
+	
+			</div>
+			<div id="part5b" class="hiddenView">
+				<div class="label">Part 5 - Completed</div>
+				<div>Good work - here is the response from your service.</div>
+				<br>
+				<div id="part5Response"></div>
+				<br>
+				<br>
+				<div>Does it look wrong?? Click the back button to try again</div>
+				<div>
+					Click Next to move on to Part 6
+				</div>
+				
+				<button id="part5bButton" onClick="part5bEvent()">Next</button>
+				<div class="error" id="part5bError"></div>
+	
+			</div>
+			<div id="part6" class="hiddenView">
+				<div class="label">Part 6 - Libraries</div>
+				<div>Create logic that you can re-use across your system</div>
+				<ul>
+					<li>Define a new library</li>
+					<li>Author reusable logic</li>
+					<li>Add your library to your service as a "requires"</li>
+				</ul>
+				<div>
+					Complete the steps in Tutorial Part 6 and then click below to check your work
+				</div>
+				<input class="fullInput" id="city6"  placeholder="city" type="text" value="Austin"/>
+				<input class="fullInput" id="state6"  placeholder="state" type="text" value="Tx"/>
+				<input class="fullInput" id="country6"  placeholder="country" type="text" value="USA"/>
+				<button id="part6Button" onClick="part6Event()">Check your Library</button>
+				<div id="part6Error"></div>
+	
+			</div>
+			<div id="part6b" class="hiddenView">
+				<div class="label">Part 6 - Completed</div>
+				<div>Good work - here is the response from your service that includes your library logic.</div>
+				<br>
+				<div id="part6Response"></div>
+				<br>
+				<br>
+				<div>If it doesn't look like you exepected click the back button to try again</div>
+				<div>
+					Click Next to move on to Part 7
+				</div>
+				
+				<button id="part6bButton" onClick="part6bEvent()">Next</button>
+				<div class="error" id="part6bError"></div>
+	
+			</div>
+			<div id="part7" class="hiddenView">
+				<div class="label">Part 7 - Messaging</div>
+				<div>The ClearBlade Platform uses a secure scalable implementation of MQTT for messaging.   MQTT - a protocol on top of TCP that is lightweight making it the open standard for IoT communications.  It uses a publish subcribe idiom where a user chooses a topic to publish on or subscribe to.  A publish can occur on one topic, but a subscriber can be subscribed to many topics.  Additionally, there are various quality of service (QoS) states that can be applied to a published message to assure that that the subscribers receive the message.</div>
+
+				<div>Lets go!</div>
+				<ul>
+					<li>Get connected!</li>
+					<li>Subscribe to a topic</li>
+					<li>Publish data in realtime</li>
+					
+				</ul>
+				<div>
+					Move onto Tutorial Part 7 and click Next
+				</div>
+				
+				<button id="part7Button" onClick="part7Event()">Start Messaging</button>
+				<div id="part7Error"></div>
+	
+			</div>
+			<div id="part7b" class="hiddenView">
+				<div class="label">Part 7 - Messaging </div>
+				<div style="margin-top:8px;"><span style="display: inline-block;" class="halfInput">Subscribe to 'weather'</span>
+					<button class="halfInput" id="part7SubscribeButton" onClick="part7SubscribeEvent()">Subscribe</button>
+				</div>
+				<div id="part7Content" class="messageBox">
+
+				</div>
+				<div id="">
+					<span><input id="part7PublishInput" class="halfInput"  placeholder="message" type="text" /></span>
+					<button id="part7PublishButton" class="halfInput" onClick="part7PublishEvent()">Publish</button>
+				</div>
+
+				<br>
+				<br>
+				<div>Parts 8, 9, and 10 will all be completed in your ClearBlade system.  Stay here and keep an eye on your message box to see the results of those activies</div>
+
+			</div>
+		</div>
+	</body>
+	<script>
+		startup();
+	</script>
+</html>

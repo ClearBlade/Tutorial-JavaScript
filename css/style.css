@@ -1,0 +1,247 @@
+body{
+	margin:0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+}
+
+input[type=checkbox] {
+	width:20px;
+	height:20px;
+	padding:10px;
+}
+
+.title{
+	position:absolute;
+	width:100%;
+	height:42px;
+	top:0px;
+	text-align:center;
+	background-color:#6E8592;
+	padding:0px;
+	color:white;
+}
+
+.titleLabel{
+	padding-top:12px;
+}
+
+/*.groupitem {
+	cursor: pointer;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}*/
+
+#titleLeft{
+	position:absolute;
+	top:8px;
+	left:8px;
+	font-size:12px;
+	border-style:solid;
+	border-color:white;
+	border-width:1px;
+	padding:2px;
+	border-radius:4px;
+}
+
+#titleRight{
+	position:absolute;
+	top:8px;
+	right:20px;
+	font-size:12px;
+	border-style:solid;
+	border-color:white;
+	border-width:1px;
+	padding:2px;
+	border-radius:4px;
+}
+
+#titleRightInvite {
+	position:absolute;
+	top:8px;
+	right:40px;
+	font-size:12px;
+	border-style:solid;
+	border-color:white;
+	border-width:1px;
+	padding:2px;
+	border-radius:4px;
+}
+
+.label{
+	padding: 10px;
+	color:white;
+	background-color:black;
+}
+
+.error {
+	color:red;
+}
+
+/*.userRow{
+	padding:4px;
+}
+
+.userLabel {
+	display:inline-block;
+	width:80%;
+	font-size: 12px;
+}
+.userToggle {
+	display:inline-block;
+	width:15%;
+}*/
+
+.fullInput{
+	width:90%;
+	height:40px;
+	font-size:20px;
+	margin-bottom:8px;
+	margin-top:8px;
+}
+
+.halfInput{
+	width:48%;
+	height:40px;
+	font-size:20px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+button{
+	width:90%;
+	margin:8px;
+	height:40px;
+	font-size:20px;
+}
+
+/*.chatType{
+	width:100%;
+	height:40px;
+	font-size:20px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+.chatTypeLabel{
+	text-decoration:underline
+}
+
+.chatInput{
+	width:100%;
+	height:40px;
+	font-size:20px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+.chatBinInput{
+	width:100%;
+	height:35px;
+	font-size:12px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+.chatButton{
+	width:100%;
+	margin:0;
+}
+
+#chatGroupList{
+	min-width:150px;
+	max-width:150px;
+	width:150px;
+	height:100%;
+}*/
+
+
+.messageName{
+	font-weight:bold;
+	padding:4px;
+}
+
+.messageContent{
+	/*border-style:solid;
+	border-color:rgb(216,216,216);
+	border-radius:5px;
+	border-width:2px;*/
+	padding:4px;
+}
+
+.messageTime{
+	font-style:italic;
+	color:gray;
+	font-size: 10px;
+}
+
+#groupChat{
+	text-align:left;
+	padding:8px;
+	overflow-y : auto;
+
+}
+
+.info{
+	font-style:italic;
+}
+
+.content{
+	margin-top:40px;
+	width:100%;
+	text-align:center;
+}
+
+.hiddenView {
+	display: none;
+}
+
+ul, li {
+	list-style-type: circle;
+	/*-webkit-padding-start: 0px;*/
+	text-align: left;
+	border-collapse:collapse;
+/*	padding-left:0px;*/
+}
+
+li{
+	border-top-style:solid;
+	border-width:0px;
+	border-color:#6E8592;
+	font-size:14px;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:12px;
+	font-weight:300;
+	/*text-decoration: underline;*/
+
+}
+
+#groupMessageText{
+	bottom:0;
+	width:100%;
+	height:57px;
+}
+
+#groupMessageBin{
+	bottom:0;
+	width:100%;
+	height:57px;
+}
+
+.messageBox{
+	text-align: left;
+    /*height: 200px;
+    border-style: solid;
+    margin-left: 30px;
+    border-width: 1px;
+    padding: 8px;
+    background-color: lightgray;*/
+    overflow-y:scroll;
+    background-color: lightgray;
+    width:90%;
+	height:200px;
+	font-size:12px;
+	padding:8px;
+	margin:8px;
+}
