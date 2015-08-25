@@ -1,4 +1,4 @@
-# JavaScript Tutorial for the ClearBlade Platform
+# JavaScript Tutorial for ClearBlade
 
 This tutorial uses the ClearBlade JavaScript API to communicate with the ClearBlade Platform. This tutorial will help you get familiar with the ClearBlade Platform and give a brief explanation of concepts like Collections, Code Services, Libraries, Triggers, Timers and Messaging.
 
