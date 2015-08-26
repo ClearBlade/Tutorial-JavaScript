@@ -28,6 +28,17 @@ var views = {
             titleCenterClick = function() {};
         }
 
+    },part2b: {
+        setup: function() {
+            setTitleLeft("Back");
+            setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
+            setTitleRight("");
+            titleLeftClick = function() {
+                showView("part2");
+            };
+            titleCenterClick = function() {};
+        }
+
     },
     part3: {
        setup: function() {
@@ -35,7 +46,7 @@ var views = {
             setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
             setTitleRight("");
             titleLeftClick = function() {
-                showView("part2");
+                showView("part2b");
             };
             titleCenterClick = function() {};
        } 
