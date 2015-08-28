@@ -1,13 +1,15 @@
+
 var part3Event = function() {
-	var query = cb.Query({collectionID: "cee2a7dd0abef288e8f0fcf18663"});
+	var query = cb.Query({collectionID: "YOUR_COLLECTIONID"});
     query.setPage(0,0);
     query.fetch(function(err, data){
         if (err){
-            showError("part3", data)
+            showError("part3", "Either collection does not exist or it doesn't have the right permissions")
         }else{
+            document.getElementById("weatherList").innerHTML = "";
             var listElement = document.getElementById("weatherList"); 
             for (var i =0 ; i < data.length; i++) {
-                var node = document.createElement("li");
+                node = document.createElement("li");
                 var textNode = document.createTextNode(JSON.stringify(data[i].data));
                 node.appendChild(textNode);
                 listElement.appendChild(node);
@@ -19,6 +21,6 @@ var part3Event = function() {
 };
 
 var part3bEvent = function() {
-   showView("part4");
-    
+    document.getElementById("weatherList").innerHTML = "";
+    showView("part4");
 };

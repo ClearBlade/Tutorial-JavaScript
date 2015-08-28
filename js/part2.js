@@ -2,7 +2,7 @@
 var part2Event = function() {
     var initCallback = function(err, data){
         if(err) {
-            showError("part2", "Uh-oh somethings not right, your Anonymous login failed - check your system key and secret??");
+            showError("part2", "Uh-oh somethings not right, your login failed - check your system key, secret, email or password??");
         } else {
             showView("part3");
             // callback(err, data);
