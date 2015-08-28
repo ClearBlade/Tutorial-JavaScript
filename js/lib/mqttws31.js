@@ -1716,9 +1716,7 @@ Paho.MQTT = (function (global) {
 									   onFailure:"function",
 									   hosts:"object",
 									   ports:"object",
-									   mqttVersion:"number",
-									   mqttVersionExplicit:"boolean",
-									   uris:"object"
+									   mqttVersion:"number"
 									});
 			
 			// If no keep alive interval is set, assume 60 seconds.
