@@ -1,5 +1,5 @@
 var part3Event = function() {
-	var query = cb.Query({collectionID: "cee2a7dd0abef288e8f0fcf18663"});
+	var query = cb.Query({collectionName: "Weather"});
     query.setPage(0,0);
     query.fetch(function(err, data){
         if (err){
