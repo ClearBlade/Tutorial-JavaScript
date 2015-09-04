@@ -1,12 +1,12 @@
 var cb = new ClearBlade();
 var initOptions = {
-	URI : "YOUR_PLATFORMURL",
-    messagingURI : "YOUR_MESSAGINGURL",
+	URI : "PLATFORM_URL",
+    messagingURI : "MESSAGING_URL",
     messagingPort: 8904,
     useMQTT: true,
     cleanSession: true,
-    systemKey: "YOUR_SYSTEMKEY",
-    systemSecret: "YOUR_SYSTEMSECRET"  
+    systemKey: "SYSTEMKEY",
+    systemSecret: "SYSTEMSECRET"  
 }
 
 var part1Event = function() {

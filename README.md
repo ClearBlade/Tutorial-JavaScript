@@ -24,7 +24,7 @@ var initOptions = {
 ```
 - Save the file
 
-If your using a local instance try platform_url = "http://localhost:8080"; messaging_url = localhost;
+If you are using a local instance try platform_url = "http://localhost:8080"; messaging_url = localhost;
   
   
 
