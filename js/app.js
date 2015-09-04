@@ -68,7 +68,7 @@ var views = {
             setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
             setTitleRight("");
             titleLeftClick = function() {
-                showView("part3");
+                showView("part3b");
             };
             titleCenterClick = function() {};
        } 
@@ -79,7 +79,7 @@ var views = {
             setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
             setTitleRight("");
             titleLeftClick = function() {
-                showView("part3");
+                showView("part4");
             };
             titleCenterClick = function() {};
        } 
@@ -90,7 +90,7 @@ var views = {
             setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
             setTitleRight("");
             titleLeftClick = function() {
-                showView("part4");
+                showView("part4b");
             };
             titleCenterClick = function() {};
        } 
@@ -111,7 +111,7 @@ var views = {
             setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
             setTitleRight("");
             titleLeftClick = function() {
-                showView("part5");
+                showView("part5b");
             };
             titleCenterClick = function() {};
        } 
@@ -131,7 +131,7 @@ var views = {
             setTitleCenter("<div class='titleLabel'>ClearBlade Tutorial</div>");
             setTitleRight("");
             titleLeftClick = function() {
-                showView("part6");
+                showView("part6b");
             };
             titleCenterClick = function() {};
        } 

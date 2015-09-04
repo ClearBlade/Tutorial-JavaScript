@@ -6,6 +6,7 @@ var part3Event = function() {
             showError("part3", data)
         }else{
             var listElement = document.getElementById("weatherList"); 
+            listElement.innerHTML="";
             for (var i =0 ; i < data.length; i++) {
                 var node = document.createElement("li");
                 var textNode = document.createTextNode(JSON.stringify(data[i].data));
