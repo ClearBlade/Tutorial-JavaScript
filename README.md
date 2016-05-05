@@ -13,8 +13,8 @@ This tutorial uses the ClearBlade JavaScript API to communicate with the ClearBl
 -Navigate and open the file **Tutorial-Javascript/js/part1.js**  Update it with your systemkey, systemsecret, platformURL and messagingURL
 
 EX (public cloud): 
-   URI : "https://platform.clearblade.com",
-   messagingURI : "platform.clearblade.com",
+   - URI : "https://platform.clearblade.com",
+   - messagingURI : "platform.clearblade.com",
 
 ```javascript 
 var initOptions = {
