@@ -10,7 +10,12 @@ This tutorial uses the ClearBlade JavaScript API to communicate with the ClearBl
 
 #### Editing part1.js to add the SystemKey, SystemSecret, PlatformURL and MessagingURL
 
-- Navigate to Tutorial-JavaScript -> js and open part1.js in the text editor of your choice and add your systemkey, systemsecret, platformURL and messagingURL ***(not clear what URLs should be. Non local examples?)***
+- Navigate to Tutorial-JavaScript -> js and open part1.js in the text editor of your choice and add your systemkey, systemsecret, platformURL and messagingURL 
+- 
+EX (public cloud): 
+   URI : "https://platform.clearblade.com",
+   messagingURI : "platform.clearblade.com",
+
 ```javascript 
 var initOptions = {
 	URI : "YOUR_PLATFORMURL",
